@@ -1,0 +1,25 @@
+.thanks-container {
+    width: 450px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.thanks-btn {
+    background-color: #2962ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.thanks-btn:hover {
+    background-color: #0039cb;
+}

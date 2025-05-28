@@ -1,0 +1,110 @@
+.review-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 12px;
+    margin-top: 0px;
+    padding-top: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: none;
+}
+
+.form-error {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.submit-btn {
+    background-color: #2962ff;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0039cb;
+}
+
+.review-error {
+    color: #c62828;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 150px;
+    left: 600px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 767px) {
+    .review-container {
+        padding: 0 20px 20px 20px;
+        margin: 0 10px 60px 10px;
+    }
+
+    .back-btn {
+        top: 135px;
+        left: 60px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .back-btn {
+        top: 140px;
+        left: 220px;
+    }
+}

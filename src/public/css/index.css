@@ -1,0 +1,283 @@
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-container select,
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.search-container select {
+    cursor: pointer;
+}
+
+.search-container input[type="text"] {
+    cursor: text;
+    flex: 1;
+}
+
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.shop-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.shop-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.shop-info {
+    padding: 15px;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.shop-info::-webkit-scrollbar {
+    width: 6px;
+}
+
+.shop-info::-webkit-scrollbar-thumb {
+    display: none;
+}
+
+.shop-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.shop-tag {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.shop-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.detail-btn,
+.review-btn {
+    background-color: #2962ff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.detail-btn:hover,
+.review-btn:hover {
+    background-color: #0039cb;
+}
+
+.heart-form {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.heart-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.heart-btn .fa-heart {
+    pointer-events: none;
+}
+
+.heart-btn .liked {
+    color: #e53935;
+}
+
+.heart-btn i {
+    font-size: 28px;
+    color: #aaa;
+    transition: color 0.3s ease;
+}
+
+.heart-btn.liked i {
+    color: #e53935;
+    transition-delay: 0s;
+}
+
+.heart-btn.unliked i {
+    color: #aaa;
+    transition-delay: 0.3s;
+}
+
+.no-result-message {
+    font-size: 32px;
+    color: #555;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .heart-form {
+        bottom: 15px;
+        right: 0px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .search-container {
+        width: 100%;
+        min-width: 360px;
+        margin: 0 auto;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .search-container select,
+    .search-container input[type="text"] {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .shop-card {
+        height: auto;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .detail-btn,
+    .review-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .shop-card {
+        height: auto;
+        font-size: 14px;
+    }
+
+    .shop-img {
+        height: 100px;
+    }
+
+    .shop-name {
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .shop-tag {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .shop-info {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .shop-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .detail-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+
+    .review-btn {
+        font-size: 10px;
+        padding: 6px 10px;
+        margin-bottom: 4px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .search-container select {
+        width: 100px;
+        min-width: 80px;
+        flex-shrink: 0;
+    }
+
+    .search-container input[type="text"] {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .heart-form {
+        bottom: 15px;
+        right: 10px;
+    }
+}

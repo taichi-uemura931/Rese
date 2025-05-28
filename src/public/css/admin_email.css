@@ -1,0 +1,92 @@
+.form-container {
+    max-width: 600px;
+    padding: 0 30px 30px 30px;
+    margin: 0 auto;
+    border-radius: 12px;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+.form-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #2962ff;
+}
+
+form label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #2962ff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0039cb;
+}
+
+.back-btn {
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    z-index: 20;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: rgb(185, 185, 185);
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        margin: 0 20px 20px 20px;
+        padding: 20px 20px;
+    }
+
+    form button {
+        font-size: 15px;
+    }
+}

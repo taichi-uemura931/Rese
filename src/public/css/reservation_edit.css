@@ -1,0 +1,83 @@
+.form-container {
+    max-width: 400px;
+    margin: 0px auto;
+    padding: 0 30px 30px 30px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-container input[type="date"],
+.form-container input[type="time"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 640px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    z-index: 20;
+    transition: background-color 0.3s ease;
+}
+
+.error {
+    color: rgb(255, 60, 60);
+    font-size: 14px;
+    margin: 5px 0 0 5px;
+}
+
+.form-container button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: #2962ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #0039cb;
+}
+
+@media (max-width: 767px) {
+.back-btn {
+        left: 70px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .back-btn {
+        top: 140px;
+        left: 240px;
+    }
+}

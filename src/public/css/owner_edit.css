@@ -1,0 +1,108 @@
+.edit-container {
+    max-width: 700px;
+    margin: auto;
+    padding: 0 20px 40px;
+}
+
+.title-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.edit-title {
+    font-size: 24px;
+    color: #2962ff;
+    margin: 0;
+}
+
+.back-btn {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+.back-btn:hover {
+    background-color: #ddd;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.current-image {
+    width: 200px;
+    border-radius: 6px;
+    margin-top: 8px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+.submit-btn {
+    align-self: center;
+    background-color: #2962ff;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0039cb;
+}
+
+@media (max-width: 767px) {
+    .edit-container {
+        padding: 0 16px 60px;
+    }
+
+    .edit-title {
+        font-size: 20px;
+    }
+
+    .back-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+}

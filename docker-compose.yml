@@ -12,9 +12,16 @@ services:
       - php
 
   php:
-    build: ./docker/php
+    build:
+      context: ./docker/php
+      args:
+        HOST_UID: ${HOST_UID}
+        HOST_GID: ${HOST_GID}
+    env_file:
+      - .env.docker
+    user: "${HOST_UID}:${HOST_GID}"
     volumes:
-      - ./src:/var/www/
+      - ./src:/var/www
 
   mysql:
     image: mysql:8.0.26
@@ -40,3 +47,9 @@ services:
       - mysql
     ports:
       - 8080:80
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "8025:8025"
+      - "1025:1025"

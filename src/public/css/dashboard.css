@@ -1,0 +1,55 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    word-break: break-word;
+}
+
+.dashboard-container p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2962ff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    width: 300px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #0039cb;
+}
+
+@media (max-width: 480px) {
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90%;
+        min-width: unset;
+    }
+}
