@@ -128,7 +128,7 @@ php artisan storage:link
 
 ## ER 図
 
-![alt](er.drawio.png)
+![alt](er_diagram_v2.png)
 
 ## URL
 
