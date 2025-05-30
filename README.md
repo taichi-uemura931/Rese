@@ -90,8 +90,8 @@ MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=example@example.com
 MAIL_FROM_NAME="Rese"
 
-STRIPE_SECRET_KEY=sk_test_
-STRIPE_PUBLIC_KEY=pk_test_
+STRIPE_SECRET=your_stripe_secret_here
+STRIPE_PUBLIC=your_stripe_public_key
 ```
 
 5. アプリケーションキーの作成
