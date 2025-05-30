@@ -34,6 +34,8 @@ use App\Http\Controllers\Owner\OwnerDashboardController;
 
 Route::get('/', [ShopController::class, 'index'])->name('home');
 
+Route::get('/dashboard', [MypageController::class, 'index'])->name('dashboard');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
